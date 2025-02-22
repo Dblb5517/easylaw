@@ -1,0 +1,23 @@
+.mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d2d2ff;
+
+  .headerPage {
+    background-image: url("../images/logo.png");
+    width: 250px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 30px;
+  }
+  .mainUp {
+    h1 {
+      color: #13a29b;
+      margin: 0;
+      text-shadow: 2px 2px #ffffff;
+    }
+  }
+}
