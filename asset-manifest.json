@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/easylaw/static/css/main.b470ff6f.css",
+    "main.js": "/easylaw/static/js/main.a32ec5ad.js",
+    "static/js/453.1daea46b.chunk.js": "/easylaw/static/js/453.1daea46b.chunk.js",
+    "index.html": "/easylaw/index.html",
+    "main.b470ff6f.css.map": "/easylaw/static/css/main.b470ff6f.css.map",
+    "main.a32ec5ad.js.map": "/easylaw/static/js/main.a32ec5ad.js.map",
+    "453.1daea46b.chunk.js.map": "/easylaw/static/js/453.1daea46b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b470ff6f.css",
+    "static/js/main.a32ec5ad.js"
+  ]
+}
