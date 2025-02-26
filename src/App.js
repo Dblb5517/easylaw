@@ -12,6 +12,7 @@ function App() {
         <Main />
         <Routes>
           <Route index path="/" element={<Info />} />
+          <Route path="/easylaw" element={<Info />} />
           <Route path="/inside/:page" element={<InfoInside />} />
         </Routes>
       </BrowserRouter>
