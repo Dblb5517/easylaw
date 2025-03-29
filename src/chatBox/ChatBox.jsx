@@ -19,12 +19,12 @@ function ChatBox() {
     setChatHistory(newHistory);
     setPrompt(""); // Clear input field
 
-    const url = process.env.API_URL;
+    const url = process.env.REACT_APP_OPENAI_API_URL;
     const options = {
       method: "POST",
       headers: {
         "x-rapidapi-key": process.env.REACT_APP_OPENAI_API_KEY,
-        "x-rapidapi-host": process.env.HOST,
+        "x-rapidapi-host": process.env.REACT_APP_RAPID_API_HOST,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
