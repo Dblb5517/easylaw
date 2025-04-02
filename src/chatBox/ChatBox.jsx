@@ -1,23 +1,22 @@
 import React, { useState } from "react";
-import "./chatBox.scss"; // Import styles
+import "./chatBox.scss";
 
 function ChatBox() {
   const [prompt, setPrompt] = useState("");
-  const [chatHistory, setChatHistory] = useState([]); // Store messages
+  const [chatHistory, setChatHistory] = useState([]);
   const [, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); // Controls chat box visibility
+  const [isOpen, setIsOpen] = useState(false); 
 
   const testAi = async () => {
-    if (!prompt.trim()) return; // Prevent empty messages
+    if (!prompt.trim()) return; 
 
     setLoading(true);
     setError("");
 
-    // Add user's message to chat history
     const newHistory = [...chatHistory, { role: "user", content: prompt }];
     setChatHistory(newHistory);
-    setPrompt(""); // Clear input field
+    setPrompt(""); 
 
     const url = process.env.REACT_APP_OPENAI_API_URL;
     const options = {
@@ -37,7 +36,6 @@ function ChatBox() {
       const response = await fetch(url, options);
       const data = await response.json();
 
-      // Append AI's response to chat history
       setChatHistory([
         ...newHistory,
         { role: "assistant", content: data.result },
@@ -51,14 +49,12 @@ function ChatBox() {
 
   return (
     <div className="chat-wrapper">
-      {/* Floating Chat Button */}
       {!isOpen && (
         <button className="chat-icon" onClick={() => setIsOpen(true)}>
           💬
         </button>
       )}
 
-      {/* Chat Box */}
       {isOpen && (
         <div className="chat-box">
           <div className="chat-header">
@@ -71,7 +67,6 @@ function ChatBox() {
             AI can make mistakes! Don't rely solely on AI opinions!
           </span>
 
-          {/* Chat History */}
           {chatHistory.length ? (
             <div className="chat-result">
               {chatHistory.map((msg, index) => (
@@ -85,7 +80,6 @@ function ChatBox() {
             ""
           )}
 
-          {/* Chat Input */}
           <textarea
             className="chat-input"
             value={prompt}
