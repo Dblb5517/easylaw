@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.aee8931e.css",
-    "main.js": "/static/js/main.d35f58e5.js",
+    "main.css": "/static/css/main.f83b0c86.css",
+    "main.js": "/static/js/main.2078196e.js",
     "static/js/453.1daea46b.chunk.js": "/static/js/453.1daea46b.chunk.js",
     "static/media/uk_united_kingdom_britain_british_flag-512.webp": "/static/media/uk_united_kingdom_britain_british_flag-512.1569d54d33963212b9a6.webp",
     "static/media/spainflagni.webp": "/static/media/spainflagni.1e726ecc8fee7ad6174c.webp",
     "index.html": "/index.html",
-    "main.aee8931e.css.map": "/static/css/main.aee8931e.css.map",
-    "main.d35f58e5.js.map": "/static/js/main.d35f58e5.js.map",
+    "main.f83b0c86.css.map": "/static/css/main.f83b0c86.css.map",
+    "main.2078196e.js.map": "/static/js/main.2078196e.js.map",
     "453.1daea46b.chunk.js.map": "/static/js/453.1daea46b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aee8931e.css",
-    "static/js/main.d35f58e5.js"
+    "static/css/main.f83b0c86.css",
+    "static/js/main.2078196e.js"
   ]
 }
